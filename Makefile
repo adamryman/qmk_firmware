@@ -604,3 +604,14 @@ BUILD_DATE := NA
 endif
 
 include $(ROOT_DIR)/testlist.mk
+
+adam-build:
+	$(MAKE) ergodox_ez:adamryman
+
+adam-install:
+	teensy  -mmcu=atmega32u4 -w ergodox_ez_adamryman.hex
+
+adam: adam-build adam-install
+
+adam: adam-build adam-install
+
