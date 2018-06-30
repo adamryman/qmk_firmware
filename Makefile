@@ -613,5 +613,4 @@ adam-install:
 
 adam: adam-build adam-install
 
-adam: adam-build adam-install
-
+.PHONY: adam
