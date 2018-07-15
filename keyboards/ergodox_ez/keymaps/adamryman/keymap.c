@@ -29,11 +29,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *   | PRGM |      |AltShf|      |  Alt |                                       |  Alt |   -  |   [  |   ]  | ~L1  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,---------------.
- *                                        | App  | LGui |       | Alt  |Ctrl/Esc|
+ *                                        | App  | LGui |       | PgUp |Ctrl/Esc|
  *                                 ,------|------|------|       |------+--------+------.
- *                                 |      |      | Home |       | PgUp |        |      |
+ *                                 |      |      | Home |       | PgDn |        |      |
  *                                 | Space|Backsp|------|       |------|  Tab   |Enter |
- *                                 |      |ace   | End  |       | PgDn |        |      |
+ *                                 |      |ace   | End  |       | L1   |        |      |
  *                                 `--------------------'       `----------------------'
  */
 // If it accepts an argument (i.e, is a function), it doesn't need KC_.
@@ -56,9 +56,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 																					 MEH_T(KC_NO),KC_N,   KC_M,  KC_COMM,KC_DOT, CTL_T(KC_SLSH),   KC_RSFT,
 																										  KC_LALT, KC_MINUS,KC_LBRC,KC_RBRC,          KC_FN1,
 
-																					 KC_LALT,        CTL_T(KC_ESC),
-																					 KC_PGUP,
-																					 KC_PGDN,KC_TAB, KC_ENT
+																					 KC_PGUP,        CTL_T(KC_ESC),
+																					 KC_PGDN,
+																					 TG(SYMB),KC_TAB, KC_ENT
     ),
 /* Keymap 1: Symbol Layer
  *
